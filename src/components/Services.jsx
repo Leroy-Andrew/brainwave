@@ -1,8 +1,7 @@
-import Heading from "./Heading";
 import Section from "./Section";
+import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
-import Generating from "./Generating";
 import {
   PhotoChatMessage,
   Gradient,
@@ -10,9 +9,11 @@ import {
   VideoChatMessage,
 } from "./design/Services";
 
+import Generating from "./Generating";
+
 const Services = () => {
   return (
-    <Section id="How to use">
+    <Section id="how-to-use">
       <div className="container">
         <Heading
           title="Generative AI made for creators."
@@ -25,8 +26,8 @@ const Services = () => {
               <img
                 className="w-full h-full object-cover md:object-right"
                 width={800}
-                height={730}
                 alt="Smartest AI"
+                height={730}
                 src={service1}
               />
             </div>
@@ -48,6 +49,7 @@ const Services = () => {
                 ))}
               </ul>
             </div>
+
             <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
@@ -62,7 +64,8 @@ const Services = () => {
                   alt="robot"
                 />
               </div>
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15 ">
+
+              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Photo editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
                   Automatically enhance your photos using our AI app&apos;s
@@ -104,13 +107,14 @@ const Services = () => {
                   ))}
                 </ul>
               </div>
+
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
                   src={service3}
                   className="w-full h-full object-cover"
                   width={520}
                   height={400}
-                  alt="Militant robot"
+                  alt="Scary robot"
                 />
 
                 <VideoChatMessage />
